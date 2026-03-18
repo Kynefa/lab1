@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Пошук по рокам -->
+        <TextView
+            android:text="@string/search_by_years"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp">
+
+            <RadioButton
+                android:id="@+id/rbYear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_1"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/rbYear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_2"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/rbYear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_3"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:text="@string/clear_selection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnOkYears"
+                android:text="@string/ok_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#AAAAAA"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!--Пошук по прізвищу -->
+        <TextView
+            android:text="@string/search_by_surname"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/etSurname"
+            android:hint="@string/enter_surname"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:completionThreshold="1" />
+
+
+        <Button
+            android:id="@+id/btnOkSurname"
+            android:text="@string/ok_surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Результат -->
+        <TextView
+            android:id="@+id/txtResult"
+            android:textSize="20sp"
+            android:paddingTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
