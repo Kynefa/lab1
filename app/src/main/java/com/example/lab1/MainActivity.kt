@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
         val txtResult = findViewById<TextView>(R.id.txtResult)
 
         val authorsByYears = mapOf(
-            "До 1950" to listOf("Тарас Шевченко", "Іван Франко"),
-            "1950–2000" to listOf("Ліна Костенко", "Михайло Коцюбинський"),
-            "Після 2000" to listOf("Сергій Жадан", "Юрій Андрухович")
+            "До 1950" to listOf("Тарас Шевченко", "Іван Франко", "Михайло Коцюбинський"),
+            "1950–2000" to listOf("Ліна Костенко", "Юрій Андрухович"),
+            "Після 2000" to listOf("Сергій Жадан")
         )
 
         val booksByAuthor = mapOf(
